@@ -9,6 +9,5 @@ class SasObject with _$SasObject {
     required String body,
   }) = SasObject$;
 
-  factory SasObject.fromJson(Map<dynamic, dynamic> json) =>
-      _$SasObjectFromJson(Map<String, dynamic>.from(json));
+  factory SasObject.fromJson(Map<dynamic, dynamic> json) => _$SasObjectFromJson(Map<String, dynamic>.from(json));
 }

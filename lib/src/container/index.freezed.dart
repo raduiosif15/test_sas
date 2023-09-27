@@ -20,14 +20,12 @@ mixin _$SasObjectsViewModel {
   List<SasObject> get sasObjects => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SasObjectsViewModelCopyWith<SasObjectsViewModel> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SasObjectsViewModelCopyWith<SasObjectsViewModel> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SasObjectsViewModelCopyWith<$Res> {
-  factory $SasObjectsViewModelCopyWith(
-          SasObjectsViewModel value, $Res Function(SasObjectsViewModel) then) =
+  factory $SasObjectsViewModelCopyWith(SasObjectsViewModel value, $Res Function(SasObjectsViewModel) then) =
       _$SasObjectsViewModelCopyWithImpl<$Res, SasObjectsViewModel>;
   @useResult
   $Res call({bool isLoading, List<SasObject> sasObjects});
@@ -63,10 +61,8 @@ class _$SasObjectsViewModelCopyWithImpl<$Res, $Val extends SasObjectsViewModel>
 }
 
 /// @nodoc
-abstract class _$$SasObjectsViewModel$CopyWith<$Res>
-    implements $SasObjectsViewModelCopyWith<$Res> {
-  factory _$$SasObjectsViewModel$CopyWith(_$SasObjectsViewModel$ value,
-          $Res Function(_$SasObjectsViewModel$) then) =
+abstract class _$$SasObjectsViewModel$CopyWith<$Res> implements $SasObjectsViewModelCopyWith<$Res> {
+  factory _$$SasObjectsViewModel$CopyWith(_$SasObjectsViewModel$ value, $Res Function(_$SasObjectsViewModel$) then) =
       __$$SasObjectsViewModel$CopyWithImpl<$Res>;
   @override
   @useResult
@@ -74,11 +70,9 @@ abstract class _$$SasObjectsViewModel$CopyWith<$Res>
 }
 
 /// @nodoc
-class __$$SasObjectsViewModel$CopyWithImpl<$Res>
-    extends _$SasObjectsViewModelCopyWithImpl<$Res, _$SasObjectsViewModel$>
+class __$$SasObjectsViewModel$CopyWithImpl<$Res> extends _$SasObjectsViewModelCopyWithImpl<$Res, _$SasObjectsViewModel$>
     implements _$$SasObjectsViewModel$CopyWith<$Res> {
-  __$$SasObjectsViewModel$CopyWithImpl(_$SasObjectsViewModel$ _value,
-      $Res Function(_$SasObjectsViewModel$) _then)
+  __$$SasObjectsViewModel$CopyWithImpl(_$SasObjectsViewModel$ _value, $Res Function(_$SasObjectsViewModel$) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -103,8 +97,7 @@ class __$$SasObjectsViewModel$CopyWithImpl<$Res>
 /// @nodoc
 
 class _$SasObjectsViewModel$ implements SasObjectsViewModel$ {
-  const _$SasObjectsViewModel$(
-      {required this.isLoading, required final List<SasObject> sasObjects})
+  const _$SasObjectsViewModel$({required this.isLoading, required final List<SasObject> sasObjects})
       : _sasObjects = sasObjects;
 
   @override
@@ -127,28 +120,23 @@ class _$SasObjectsViewModel$ implements SasObjectsViewModel$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SasObjectsViewModel$ &&
-            (identical(other.isLoading, isLoading) ||
-                other.isLoading == isLoading) &&
-            const DeepCollectionEquality()
-                .equals(other._sasObjects, _sasObjects));
+            (identical(other.isLoading, isLoading) || other.isLoading == isLoading) &&
+            const DeepCollectionEquality().equals(other._sasObjects, _sasObjects));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, isLoading, const DeepCollectionEquality().hash(_sasObjects));
+  int get hashCode => Object.hash(runtimeType, isLoading, const DeepCollectionEquality().hash(_sasObjects));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SasObjectsViewModel$CopyWith<_$SasObjectsViewModel$> get copyWith =>
-      __$$SasObjectsViewModel$CopyWithImpl<_$SasObjectsViewModel$>(
-          this, _$identity);
+      __$$SasObjectsViewModel$CopyWithImpl<_$SasObjectsViewModel$>(this, _$identity);
 }
 
 abstract class SasObjectsViewModel$ implements SasObjectsViewModel {
-  const factory SasObjectsViewModel$(
-      {required final bool isLoading,
-      required final List<SasObject> sasObjects}) = _$SasObjectsViewModel$;
+  const factory SasObjectsViewModel$({required final bool isLoading, required final List<SasObject> sasObjects}) =
+      _$SasObjectsViewModel$;
 
   @override
   bool get isLoading;
@@ -156,6 +144,5 @@ abstract class SasObjectsViewModel$ implements SasObjectsViewModel {
   List<SasObject> get sasObjects;
   @override
   @JsonKey(ignore: true)
-  _$$SasObjectsViewModel$CopyWith<_$SasObjectsViewModel$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SasObjectsViewModel$CopyWith<_$SasObjectsViewModel$> get copyWith => throw _privateConstructorUsedError;
 }

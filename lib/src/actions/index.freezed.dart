@@ -20,27 +20,22 @@ mixin _$GetSasObjects {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String pendingId) start,
-    required TResult Function(List<SasObject> sasObjects, String pendingId)
-        successful,
-    required TResult Function(
-            Object error, StackTrace stackTrace, String pendingId)
-        error,
+    required TResult Function(List<SasObject> sasObjects, String pendingId) successful,
+    required TResult Function(Object error, StackTrace stackTrace, String pendingId) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String pendingId)? start,
     TResult? Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult? Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult? Function(Object error, StackTrace stackTrace, String pendingId)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String pendingId)? start,
     TResult Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult Function(Object error, StackTrace stackTrace, String pendingId)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -68,22 +63,19 @@ mixin _$GetSasObjects {
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $GetSasObjectsCopyWith<GetSasObjects> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetSasObjectsCopyWith<GetSasObjects> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetSasObjectsCopyWith<$Res> {
-  factory $GetSasObjectsCopyWith(
-          GetSasObjects value, $Res Function(GetSasObjects) then) =
+  factory $GetSasObjectsCopyWith(GetSasObjects value, $Res Function(GetSasObjects) then) =
       _$GetSasObjectsCopyWithImpl<$Res, GetSasObjects>;
   @useResult
   $Res call({String pendingId});
 }
 
 /// @nodoc
-class _$GetSasObjectsCopyWithImpl<$Res, $Val extends GetSasObjects>
-    implements $GetSasObjectsCopyWith<$Res> {
+class _$GetSasObjectsCopyWithImpl<$Res, $Val extends GetSasObjects> implements $GetSasObjectsCopyWith<$Res> {
   _$GetSasObjectsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -106,10 +98,8 @@ class _$GetSasObjectsCopyWithImpl<$Res, $Val extends GetSasObjects>
 }
 
 /// @nodoc
-abstract class _$$GetSasObjectsStartCopyWith<$Res>
-    implements $GetSasObjectsCopyWith<$Res> {
-  factory _$$GetSasObjectsStartCopyWith(_$GetSasObjectsStart value,
-          $Res Function(_$GetSasObjectsStart) then) =
+abstract class _$$GetSasObjectsStartCopyWith<$Res> implements $GetSasObjectsCopyWith<$Res> {
+  factory _$$GetSasObjectsStartCopyWith(_$GetSasObjectsStart value, $Res Function(_$GetSasObjectsStart) then) =
       __$$GetSasObjectsStartCopyWithImpl<$Res>;
   @override
   @useResult
@@ -117,11 +107,9 @@ abstract class _$$GetSasObjectsStartCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$GetSasObjectsStartCopyWithImpl<$Res>
-    extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsStart>
+class __$$GetSasObjectsStartCopyWithImpl<$Res> extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsStart>
     implements _$$GetSasObjectsStartCopyWith<$Res> {
-  __$$GetSasObjectsStartCopyWithImpl(
-      _$GetSasObjectsStart _value, $Res Function(_$GetSasObjectsStart) _then)
+  __$$GetSasObjectsStartCopyWithImpl(_$GetSasObjectsStart _value, $Res Function(_$GetSasObjectsStart) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -157,8 +145,7 @@ class _$GetSasObjectsStart implements GetSasObjectsStart {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetSasObjectsStart &&
-            (identical(other.pendingId, pendingId) ||
-                other.pendingId == pendingId));
+            (identical(other.pendingId, pendingId) || other.pendingId == pendingId));
   }
 
   @override
@@ -168,18 +155,14 @@ class _$GetSasObjectsStart implements GetSasObjectsStart {
   @override
   @pragma('vm:prefer-inline')
   _$$GetSasObjectsStartCopyWith<_$GetSasObjectsStart> get copyWith =>
-      __$$GetSasObjectsStartCopyWithImpl<_$GetSasObjectsStart>(
-          this, _$identity);
+      __$$GetSasObjectsStartCopyWithImpl<_$GetSasObjectsStart>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String pendingId) start,
-    required TResult Function(List<SasObject> sasObjects, String pendingId)
-        successful,
-    required TResult Function(
-            Object error, StackTrace stackTrace, String pendingId)
-        error,
+    required TResult Function(List<SasObject> sasObjects, String pendingId) successful,
+    required TResult Function(Object error, StackTrace stackTrace, String pendingId) error,
   }) {
     return start(pendingId);
   }
@@ -189,8 +172,7 @@ class _$GetSasObjectsStart implements GetSasObjectsStart {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String pendingId)? start,
     TResult? Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult? Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult? Function(Object error, StackTrace stackTrace, String pendingId)? error,
   }) {
     return start?.call(pendingId);
   }
@@ -200,8 +182,7 @@ class _$GetSasObjectsStart implements GetSasObjectsStart {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String pendingId)? start,
     TResult Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult Function(Object error, StackTrace stackTrace, String pendingId)? error,
     required TResult orElse(),
   }) {
     if (start != null) {
@@ -246,22 +227,19 @@ class _$GetSasObjectsStart implements GetSasObjectsStart {
 }
 
 abstract class GetSasObjectsStart implements GetSasObjects, ActionStart {
-  const factory GetSasObjectsStart({final String pendingId}) =
-      _$GetSasObjectsStart;
+  const factory GetSasObjectsStart({final String pendingId}) = _$GetSasObjectsStart;
 
   @override
   String get pendingId;
   @override
   @JsonKey(ignore: true)
-  _$$GetSasObjectsStartCopyWith<_$GetSasObjectsStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetSasObjectsStartCopyWith<_$GetSasObjectsStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetSasObjectsSuccessfulCopyWith<$Res>
-    implements $GetSasObjectsCopyWith<$Res> {
-  factory _$$GetSasObjectsSuccessfulCopyWith(_$GetSasObjectsSuccessful value,
-          $Res Function(_$GetSasObjectsSuccessful) then) =
+abstract class _$$GetSasObjectsSuccessfulCopyWith<$Res> implements $GetSasObjectsCopyWith<$Res> {
+  factory _$$GetSasObjectsSuccessfulCopyWith(
+          _$GetSasObjectsSuccessful value, $Res Function(_$GetSasObjectsSuccessful) then) =
       __$$GetSasObjectsSuccessfulCopyWithImpl<$Res>;
   @override
   @useResult
@@ -269,11 +247,10 @@ abstract class _$$GetSasObjectsSuccessfulCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$GetSasObjectsSuccessfulCopyWithImpl<$Res>
-    extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsSuccessful>
+class __$$GetSasObjectsSuccessfulCopyWithImpl<$Res> extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsSuccessful>
     implements _$$GetSasObjectsSuccessfulCopyWith<$Res> {
-  __$$GetSasObjectsSuccessfulCopyWithImpl(_$GetSasObjectsSuccessful _value,
-      $Res Function(_$GetSasObjectsSuccessful) _then)
+  __$$GetSasObjectsSuccessfulCopyWithImpl(
+      _$GetSasObjectsSuccessful _value, $Res Function(_$GetSasObjectsSuccessful) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -298,8 +275,7 @@ class __$$GetSasObjectsSuccessfulCopyWithImpl<$Res>
 /// @nodoc
 
 class _$GetSasObjectsSuccessful implements GetSasObjectsSuccessful {
-  const _$GetSasObjectsSuccessful(final List<SasObject> sasObjects,
-      [this.pendingId = _kGetSasObjectsPendingId])
+  const _$GetSasObjectsSuccessful(final List<SasObject> sasObjects, [this.pendingId = _kGetSasObjectsPendingId])
       : _sasObjects = sasObjects;
 
   final List<SasObject> _sasObjects;
@@ -324,32 +300,25 @@ class _$GetSasObjectsSuccessful implements GetSasObjectsSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetSasObjectsSuccessful &&
-            const DeepCollectionEquality()
-                .equals(other._sasObjects, _sasObjects) &&
-            (identical(other.pendingId, pendingId) ||
-                other.pendingId == pendingId));
+            const DeepCollectionEquality().equals(other._sasObjects, _sasObjects) &&
+            (identical(other.pendingId, pendingId) || other.pendingId == pendingId));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_sasObjects), pendingId);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_sasObjects), pendingId);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetSasObjectsSuccessfulCopyWith<_$GetSasObjectsSuccessful> get copyWith =>
-      __$$GetSasObjectsSuccessfulCopyWithImpl<_$GetSasObjectsSuccessful>(
-          this, _$identity);
+      __$$GetSasObjectsSuccessfulCopyWithImpl<_$GetSasObjectsSuccessful>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String pendingId) start,
-    required TResult Function(List<SasObject> sasObjects, String pendingId)
-        successful,
-    required TResult Function(
-            Object error, StackTrace stackTrace, String pendingId)
-        error,
+    required TResult Function(List<SasObject> sasObjects, String pendingId) successful,
+    required TResult Function(Object error, StackTrace stackTrace, String pendingId) error,
   }) {
     return successful(sasObjects, pendingId);
   }
@@ -359,8 +328,7 @@ class _$GetSasObjectsSuccessful implements GetSasObjectsSuccessful {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String pendingId)? start,
     TResult? Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult? Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult? Function(Object error, StackTrace stackTrace, String pendingId)? error,
   }) {
     return successful?.call(sasObjects, pendingId);
   }
@@ -370,8 +338,7 @@ class _$GetSasObjectsSuccessful implements GetSasObjectsSuccessful {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String pendingId)? start,
     TResult Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult Function(Object error, StackTrace stackTrace, String pendingId)? error,
     required TResult orElse(),
   }) {
     if (successful != null) {
@@ -416,23 +383,20 @@ class _$GetSasObjectsSuccessful implements GetSasObjectsSuccessful {
 }
 
 abstract class GetSasObjectsSuccessful implements GetSasObjects, ActionDone {
-  const factory GetSasObjectsSuccessful(final List<SasObject> sasObjects,
-      [final String pendingId]) = _$GetSasObjectsSuccessful;
+  const factory GetSasObjectsSuccessful(final List<SasObject> sasObjects, [final String pendingId]) =
+      _$GetSasObjectsSuccessful;
 
   List<SasObject> get sasObjects;
   @override
   String get pendingId;
   @override
   @JsonKey(ignore: true)
-  _$$GetSasObjectsSuccessfulCopyWith<_$GetSasObjectsSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetSasObjectsSuccessfulCopyWith<_$GetSasObjectsSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetSasObjectsErrorCopyWith<$Res>
-    implements $GetSasObjectsCopyWith<$Res> {
-  factory _$$GetSasObjectsErrorCopyWith(_$GetSasObjectsError value,
-          $Res Function(_$GetSasObjectsError) then) =
+abstract class _$$GetSasObjectsErrorCopyWith<$Res> implements $GetSasObjectsCopyWith<$Res> {
+  factory _$$GetSasObjectsErrorCopyWith(_$GetSasObjectsError value, $Res Function(_$GetSasObjectsError) then) =
       __$$GetSasObjectsErrorCopyWithImpl<$Res>;
   @override
   @useResult
@@ -440,11 +404,9 @@ abstract class _$$GetSasObjectsErrorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$GetSasObjectsErrorCopyWithImpl<$Res>
-    extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsError>
+class __$$GetSasObjectsErrorCopyWithImpl<$Res> extends _$GetSasObjectsCopyWithImpl<$Res, _$GetSasObjectsError>
     implements _$$GetSasObjectsErrorCopyWith<$Res> {
-  __$$GetSasObjectsErrorCopyWithImpl(
-      _$GetSasObjectsError _value, $Res Function(_$GetSasObjectsError) _then)
+  __$$GetSasObjectsErrorCopyWithImpl(_$GetSasObjectsError _value, $Res Function(_$GetSasObjectsError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -471,8 +433,7 @@ class __$$GetSasObjectsErrorCopyWithImpl<$Res>
 /// @nodoc
 
 class _$GetSasObjectsError implements GetSasObjectsError {
-  const _$GetSasObjectsError(this.error, this.stackTrace,
-      [this.pendingId = _kGetSasObjectsPendingId]);
+  const _$GetSasObjectsError(this.error, this.stackTrace, [this.pendingId = _kGetSasObjectsPendingId]);
 
   @override
   final Object error;
@@ -493,32 +454,25 @@ class _$GetSasObjectsError implements GetSasObjectsError {
         (other.runtimeType == runtimeType &&
             other is _$GetSasObjectsError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace) &&
-            (identical(other.pendingId, pendingId) ||
-                other.pendingId == pendingId));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace) &&
+            (identical(other.pendingId, pendingId) || other.pendingId == pendingId));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(error), stackTrace, pendingId);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace, pendingId);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetSasObjectsErrorCopyWith<_$GetSasObjectsError> get copyWith =>
-      __$$GetSasObjectsErrorCopyWithImpl<_$GetSasObjectsError>(
-          this, _$identity);
+      __$$GetSasObjectsErrorCopyWithImpl<_$GetSasObjectsError>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String pendingId) start,
-    required TResult Function(List<SasObject> sasObjects, String pendingId)
-        successful,
-    required TResult Function(
-            Object error, StackTrace stackTrace, String pendingId)
-        error,
+    required TResult Function(List<SasObject> sasObjects, String pendingId) successful,
+    required TResult Function(Object error, StackTrace stackTrace, String pendingId) error,
   }) {
     return error(this.error, stackTrace, pendingId);
   }
@@ -528,8 +482,7 @@ class _$GetSasObjectsError implements GetSasObjectsError {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String pendingId)? start,
     TResult? Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult? Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult? Function(Object error, StackTrace stackTrace, String pendingId)? error,
   }) {
     return error?.call(this.error, stackTrace, pendingId);
   }
@@ -539,8 +492,7 @@ class _$GetSasObjectsError implements GetSasObjectsError {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String pendingId)? start,
     TResult Function(List<SasObject> sasObjects, String pendingId)? successful,
-    TResult Function(Object error, StackTrace stackTrace, String pendingId)?
-        error,
+    TResult Function(Object error, StackTrace stackTrace, String pendingId)? error,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -584,11 +536,9 @@ class _$GetSasObjectsError implements GetSasObjectsError {
   }
 }
 
-abstract class GetSasObjectsError
-    implements GetSasObjects, ActionDone, ErrorAction {
-  const factory GetSasObjectsError(
-      final Object error, final StackTrace stackTrace,
-      [final String pendingId]) = _$GetSasObjectsError;
+abstract class GetSasObjectsError implements GetSasObjects, ActionDone, ErrorAction {
+  const factory GetSasObjectsError(final Object error, final StackTrace stackTrace, [final String pendingId]) =
+      _$GetSasObjectsError;
 
   Object get error;
   StackTrace get stackTrace;
@@ -596,6 +546,5 @@ abstract class GetSasObjectsError
   String get pendingId;
   @override
   @JsonKey(ignore: true)
-  _$$GetSasObjectsErrorCopyWith<_$GetSasObjectsError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetSasObjectsErrorCopyWith<_$GetSasObjectsError> get copyWith => throw _privateConstructorUsedError;
 }

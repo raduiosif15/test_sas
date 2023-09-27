@@ -13,8 +13,7 @@ _$SasObject$ _$$SasObject$FromJson(Map<String, dynamic> json) => _$SasObject$(
       body: json['body'] as String,
     );
 
-Map<String, dynamic> _$$SasObject$ToJson(_$SasObject$ instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$SasObject$ToJson(_$SasObject$ instance) => <String, dynamic>{
       'userId': instance.userId,
       'id': instance.id,
       'title': instance.title,

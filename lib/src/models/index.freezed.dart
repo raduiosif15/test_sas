@@ -20,14 +20,12 @@ mixin _$AppState {
   Set<String> get pending => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $AppStateCopyWith<AppState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppStateCopyWith<AppState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
-  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
-      _$AppStateCopyWithImpl<$Res, AppState>;
+  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) = _$AppStateCopyWithImpl<$Res, AppState>;
   @useResult
   $Res call({SasState sasState, Set<String> pending});
 
@@ -35,8 +33,7 @@ abstract class $AppStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
-    implements $AppStateCopyWith<$Res> {
+class _$AppStateCopyWithImpl<$Res, $Val extends AppState> implements $AppStateCopyWith<$Res> {
   _$AppStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -73,9 +70,7 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
 
 /// @nodoc
 abstract class _$$AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory _$$AppState$CopyWith(
-          _$AppState$ value, $Res Function(_$AppState$) then) =
-      __$$AppState$CopyWithImpl<$Res>;
+  factory _$$AppState$CopyWith(_$AppState$ value, $Res Function(_$AppState$) then) = __$$AppState$CopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({SasState sasState, Set<String> pending});
@@ -85,12 +80,9 @@ abstract class _$$AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$AppState$CopyWithImpl<$Res>
-    extends _$AppStateCopyWithImpl<$Res, _$AppState$>
+class __$$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res, _$AppState$>
     implements _$$AppState$CopyWith<$Res> {
-  __$$AppState$CopyWithImpl(
-      _$AppState$ _value, $Res Function(_$AppState$) _then)
-      : super(_value, _then);
+  __$$AppState$CopyWithImpl(_$AppState$ _value, $Res Function(_$AppState$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -114,9 +106,7 @@ class __$$AppState$CopyWithImpl<$Res>
 /// @nodoc
 
 class _$AppState$ implements AppState$ {
-  const _$AppState$(
-      {this.sasState = const SasState(),
-      final Set<String> pending = const <String>{}})
+  const _$AppState$({this.sasState = const SasState(), final Set<String> pending = const <String>{}})
       : _pending = pending;
 
   @override
@@ -141,25 +131,21 @@ class _$AppState$ implements AppState$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AppState$ &&
-            (identical(other.sasState, sasState) ||
-                other.sasState == sasState) &&
+            (identical(other.sasState, sasState) || other.sasState == sasState) &&
             const DeepCollectionEquality().equals(other._pending, _pending));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, sasState, const DeepCollectionEquality().hash(_pending));
+  int get hashCode => Object.hash(runtimeType, sasState, const DeepCollectionEquality().hash(_pending));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
+  _$$AppState$CopyWith<_$AppState$> get copyWith => __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
 }
 
 abstract class AppState$ implements AppState {
-  const factory AppState$(
-      {final SasState sasState, final Set<String> pending}) = _$AppState$;
+  const factory AppState$({final SasState sasState, final Set<String> pending}) = _$AppState$;
 
   @override
   SasState get sasState;
@@ -167,8 +153,7 @@ abstract class AppState$ implements AppState {
   Set<String> get pending;
   @override
   @JsonKey(ignore: true)
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AppState$CopyWith<_$AppState$> get copyWith => throw _privateConstructorUsedError;
 }
 
 SasObject _$SasObjectFromJson(Map<String, dynamic> json) {
@@ -184,21 +169,18 @@ mixin _$SasObject {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SasObjectCopyWith<SasObject> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SasObjectCopyWith<SasObject> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SasObjectCopyWith<$Res> {
-  factory $SasObjectCopyWith(SasObject value, $Res Function(SasObject) then) =
-      _$SasObjectCopyWithImpl<$Res, SasObject>;
+  factory $SasObjectCopyWith(SasObject value, $Res Function(SasObject) then) = _$SasObjectCopyWithImpl<$Res, SasObject>;
   @useResult
   $Res call({int userId, int id, String title, String body});
 }
 
 /// @nodoc
-class _$SasObjectCopyWithImpl<$Res, $Val extends SasObject>
-    implements $SasObjectCopyWith<$Res> {
+class _$SasObjectCopyWithImpl<$Res, $Val extends SasObject> implements $SasObjectCopyWith<$Res> {
   _$SasObjectCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -237,8 +219,7 @@ class _$SasObjectCopyWithImpl<$Res, $Val extends SasObject>
 
 /// @nodoc
 abstract class _$$SasObject$CopyWith<$Res> implements $SasObjectCopyWith<$Res> {
-  factory _$$SasObject$CopyWith(
-          _$SasObject$ value, $Res Function(_$SasObject$) then) =
+  factory _$$SasObject$CopyWith(_$SasObject$ value, $Res Function(_$SasObject$) then) =
       __$$SasObject$CopyWithImpl<$Res>;
   @override
   @useResult
@@ -246,12 +227,9 @@ abstract class _$$SasObject$CopyWith<$Res> implements $SasObjectCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$SasObject$CopyWithImpl<$Res>
-    extends _$SasObjectCopyWithImpl<$Res, _$SasObject$>
+class __$$SasObject$CopyWithImpl<$Res> extends _$SasObjectCopyWithImpl<$Res, _$SasObject$>
     implements _$$SasObject$CopyWith<$Res> {
-  __$$SasObject$CopyWithImpl(
-      _$SasObject$ _value, $Res Function(_$SasObject$) _then)
-      : super(_value, _then);
+  __$$SasObject$CopyWithImpl(_$SasObject$ _value, $Res Function(_$SasObject$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -285,14 +263,9 @@ class __$$SasObject$CopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$SasObject$ implements SasObject$ {
-  const _$SasObject$(
-      {required this.userId,
-      required this.id,
-      required this.title,
-      required this.body});
+  const _$SasObject$({required this.userId, required this.id, required this.title, required this.body});
 
-  factory _$SasObject$.fromJson(Map<String, dynamic> json) =>
-      _$$SasObject$FromJson(json);
+  factory _$SasObject$.fromJson(Map<String, dynamic> json) => _$$SasObject$FromJson(json);
 
   @override
   final int userId;
@@ -326,8 +299,7 @@ class _$SasObject$ implements SasObject$ {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$SasObject$CopyWith<_$SasObject$> get copyWith =>
-      __$$SasObject$CopyWithImpl<_$SasObject$>(this, _$identity);
+  _$$SasObject$CopyWith<_$SasObject$> get copyWith => __$$SasObject$CopyWithImpl<_$SasObject$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -344,8 +316,7 @@ abstract class SasObject$ implements SasObject {
       required final String title,
       required final String body}) = _$SasObject$;
 
-  factory SasObject$.fromJson(Map<String, dynamic> json) =
-      _$SasObject$.fromJson;
+  factory SasObject$.fromJson(Map<String, dynamic> json) = _$SasObject$.fromJson;
 
   @override
   int get userId;
@@ -357,8 +328,7 @@ abstract class SasObject$ implements SasObject {
   String get body;
   @override
   @JsonKey(ignore: true)
-  _$$SasObject$CopyWith<_$SasObject$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SasObject$CopyWith<_$SasObject$> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -366,21 +336,18 @@ mixin _$SasState {
   List<SasObject> get sasObjects => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SasStateCopyWith<SasState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SasStateCopyWith<SasState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SasStateCopyWith<$Res> {
-  factory $SasStateCopyWith(SasState value, $Res Function(SasState) then) =
-      _$SasStateCopyWithImpl<$Res, SasState>;
+  factory $SasStateCopyWith(SasState value, $Res Function(SasState) then) = _$SasStateCopyWithImpl<$Res, SasState>;
   @useResult
   $Res call({List<SasObject> sasObjects});
 }
 
 /// @nodoc
-class _$SasStateCopyWithImpl<$Res, $Val extends SasState>
-    implements $SasStateCopyWith<$Res> {
+class _$SasStateCopyWithImpl<$Res, $Val extends SasState> implements $SasStateCopyWith<$Res> {
   _$SasStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -404,21 +371,16 @@ class _$SasStateCopyWithImpl<$Res, $Val extends SasState>
 
 /// @nodoc
 abstract class _$$SasState$CopyWith<$Res> implements $SasStateCopyWith<$Res> {
-  factory _$$SasState$CopyWith(
-          _$SasState$ value, $Res Function(_$SasState$) then) =
-      __$$SasState$CopyWithImpl<$Res>;
+  factory _$$SasState$CopyWith(_$SasState$ value, $Res Function(_$SasState$) then) = __$$SasState$CopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<SasObject> sasObjects});
 }
 
 /// @nodoc
-class __$$SasState$CopyWithImpl<$Res>
-    extends _$SasStateCopyWithImpl<$Res, _$SasState$>
+class __$$SasState$CopyWithImpl<$Res> extends _$SasStateCopyWithImpl<$Res, _$SasState$>
     implements _$$SasState$CopyWith<$Res> {
-  __$$SasState$CopyWithImpl(
-      _$SasState$ _value, $Res Function(_$SasState$) _then)
-      : super(_value, _then);
+  __$$SasState$CopyWithImpl(_$SasState$ _value, $Res Function(_$SasState$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -437,8 +399,7 @@ class __$$SasState$CopyWithImpl<$Res>
 /// @nodoc
 
 class _$SasState$ implements SasState$ {
-  const _$SasState$({final List<SasObject> sasObjects = const <SasObject>[]})
-      : _sasObjects = sasObjects;
+  const _$SasState$({final List<SasObject> sasObjects = const <SasObject>[]}) : _sasObjects = sasObjects;
 
   final List<SasObject> _sasObjects;
   @override
@@ -459,19 +420,16 @@ class _$SasState$ implements SasState$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SasState$ &&
-            const DeepCollectionEquality()
-                .equals(other._sasObjects, _sasObjects));
+            const DeepCollectionEquality().equals(other._sasObjects, _sasObjects));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_sasObjects));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_sasObjects));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$SasState$CopyWith<_$SasState$> get copyWith =>
-      __$$SasState$CopyWithImpl<_$SasState$>(this, _$identity);
+  _$$SasState$CopyWith<_$SasState$> get copyWith => __$$SasState$CopyWithImpl<_$SasState$>(this, _$identity);
 }
 
 abstract class SasState$ implements SasState {
@@ -481,6 +439,5 @@ abstract class SasState$ implements SasState {
   List<SasObject> get sasObjects;
   @override
   @JsonKey(ignore: true)
-  _$$SasState$CopyWith<_$SasState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SasState$CopyWith<_$SasState$> get copyWith => throw _privateConstructorUsedError;
 }

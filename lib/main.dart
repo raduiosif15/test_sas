@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:redux/redux.dart';
+import 'package:test_sas/generated/l10n.dart';
 import 'package:test_sas/src/init/init.dart';
 import 'package:test_sas/src/models/index.dart';
 import 'package:test_sas/src/utils/routes.dart';
@@ -33,7 +35,14 @@ class TestSasApp extends StatelessWidget {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.theme,
-          onGenerateTitle: (BuildContext context) => 'Test Sas app',
+          localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+            S.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
+          onGenerateTitle: (BuildContext context) => S.of(context).app_title,
           initialRoute: AppRoutes.home,
           onGenerateRoute: AppRoutes.onGenerateRoute,
         ),

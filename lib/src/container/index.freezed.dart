@@ -61,18 +61,21 @@ class _$SasObjectsViewModelCopyWithImpl<$Res, $Val extends SasObjectsViewModel>
 }
 
 /// @nodoc
-abstract class _$$SasObjectsViewModel$CopyWith<$Res> implements $SasObjectsViewModelCopyWith<$Res> {
-  factory _$$SasObjectsViewModel$CopyWith(_$SasObjectsViewModel$ value, $Res Function(_$SasObjectsViewModel$) then) =
-      __$$SasObjectsViewModel$CopyWithImpl<$Res>;
+abstract class _$$SasObjectsViewModel$ImplCopyWith<$Res> implements $SasObjectsViewModelCopyWith<$Res> {
+  factory _$$SasObjectsViewModel$ImplCopyWith(
+          _$SasObjectsViewModel$Impl value, $Res Function(_$SasObjectsViewModel$Impl) then) =
+      __$$SasObjectsViewModel$ImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool isLoading, List<SasObject> sasObjects});
 }
 
 /// @nodoc
-class __$$SasObjectsViewModel$CopyWithImpl<$Res> extends _$SasObjectsViewModelCopyWithImpl<$Res, _$SasObjectsViewModel$>
-    implements _$$SasObjectsViewModel$CopyWith<$Res> {
-  __$$SasObjectsViewModel$CopyWithImpl(_$SasObjectsViewModel$ _value, $Res Function(_$SasObjectsViewModel$) _then)
+class __$$SasObjectsViewModel$ImplCopyWithImpl<$Res>
+    extends _$SasObjectsViewModelCopyWithImpl<$Res, _$SasObjectsViewModel$Impl>
+    implements _$$SasObjectsViewModel$ImplCopyWith<$Res> {
+  __$$SasObjectsViewModel$ImplCopyWithImpl(
+      _$SasObjectsViewModel$Impl _value, $Res Function(_$SasObjectsViewModel$Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -81,7 +84,7 @@ class __$$SasObjectsViewModel$CopyWithImpl<$Res> extends _$SasObjectsViewModelCo
     Object? isLoading = null,
     Object? sasObjects = null,
   }) {
-    return _then(_$SasObjectsViewModel$(
+    return _then(_$SasObjectsViewModel$Impl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -96,8 +99,8 @@ class __$$SasObjectsViewModel$CopyWithImpl<$Res> extends _$SasObjectsViewModelCo
 
 /// @nodoc
 
-class _$SasObjectsViewModel$ implements SasObjectsViewModel$ {
-  const _$SasObjectsViewModel$({required this.isLoading, required final List<SasObject> sasObjects})
+class _$SasObjectsViewModel$Impl implements SasObjectsViewModel$ {
+  const _$SasObjectsViewModel$Impl({required this.isLoading, required final List<SasObject> sasObjects})
       : _sasObjects = sasObjects;
 
   @override
@@ -119,7 +122,7 @@ class _$SasObjectsViewModel$ implements SasObjectsViewModel$ {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SasObjectsViewModel$ &&
+            other is _$SasObjectsViewModel$Impl &&
             (identical(other.isLoading, isLoading) || other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other._sasObjects, _sasObjects));
   }
@@ -130,13 +133,13 @@ class _$SasObjectsViewModel$ implements SasObjectsViewModel$ {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$SasObjectsViewModel$CopyWith<_$SasObjectsViewModel$> get copyWith =>
-      __$$SasObjectsViewModel$CopyWithImpl<_$SasObjectsViewModel$>(this, _$identity);
+  _$$SasObjectsViewModel$ImplCopyWith<_$SasObjectsViewModel$Impl> get copyWith =>
+      __$$SasObjectsViewModel$ImplCopyWithImpl<_$SasObjectsViewModel$Impl>(this, _$identity);
 }
 
 abstract class SasObjectsViewModel$ implements SasObjectsViewModel {
   const factory SasObjectsViewModel$({required final bool isLoading, required final List<SasObject> sasObjects}) =
-      _$SasObjectsViewModel$;
+      _$SasObjectsViewModel$Impl;
 
   @override
   bool get isLoading;
@@ -144,5 +147,5 @@ abstract class SasObjectsViewModel$ implements SasObjectsViewModel {
   List<SasObject> get sasObjects;
   @override
   @JsonKey(ignore: true)
-  _$$SasObjectsViewModel$CopyWith<_$SasObjectsViewModel$> get copyWith => throw _privateConstructorUsedError;
+  _$$SasObjectsViewModel$ImplCopyWith<_$SasObjectsViewModel$Impl> get copyWith => throw _privateConstructorUsedError;
 }

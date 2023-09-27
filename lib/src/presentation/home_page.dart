@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_sas/generated/l10n.dart';
 import 'package:test_sas/src/container/index.dart';
 import 'package:test_sas/src/models/index.dart';
 import 'package:test_sas/src/presentation/sas_object_widget.dart';
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test Sas App'),
+        title: Text(S.of(context).app_title),
         centerTitle: true,
         elevation: 0,
       ),
@@ -23,9 +24,8 @@ class HomePage extends StatelessWidget {
           }
 
           if (vm.sasObjects.isEmpty) {
-            return const Center(
-              // TODO(radu): use intl
-              child: Text('Empty'),
+            return Center(
+              child: Text(S.of(context).empty_list),
             );
           }
 

@@ -14,5 +14,5 @@
 To generate (regenerate) the serializable models
 
 ```bash
-$ flutter pub run build_runner build --delete-conflicting-outputs
+$ dart pub run build_runner build --delete-conflicting-outputs
 ```

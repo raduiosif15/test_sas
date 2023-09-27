@@ -14,11 +14,19 @@ jobs:
         with:
           channel: stable
 
-      - name: Setup project
-        run: flutter pub get
+      - name: Install Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install upcode
+        run: |
+          dart pub global activate upcode_ci
+          echo "~/.pub-cache/bin" >> $GITHUB_PATH
+
+      - name: Setup flutter project
+        run: upcode flutter:environment set
 
       - name: Analyze flutter package
-        run: dart analyze
+        run: upcode flutter:analyze
 
       - name: Check format
-        run: dart format -l 120 --set-exit-if-changed .
+        run: upcode flutter:format

@@ -7,6 +7,7 @@
 - Analysis options: very_good_analysis
 - Models&Actions: freezed
 - Dependency injection: injectable, get_it
+- Useful tools: upcode_ci (especially for skipping generated code on format)
 - Ensure CI/CD pipelines with gitlab actions
 
 ### Build runner

@@ -1,0 +1,4 @@
+flutter_dir: ./
+
+api_config:
+  host_url: jsonplaceholder.typicode.com

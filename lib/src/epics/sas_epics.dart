@@ -1,9 +1,4 @@
-import 'package:injectable/injectable.dart';
-import 'package:redux_epics/redux_epics.dart';
-import 'package:rxdart/rxdart.dart';
-import 'package:test_sas/src/actions/index.dart';
-import 'package:test_sas/src/data/sas_api.dart';
-import 'package:test_sas/src/models/index.dart';
+part of 'app_epics.dart';
 
 @injectable
 class SasEpics implements EpicClass<AppState> {
@@ -23,8 +18,21 @@ class SasEpics implements EpicClass<AppState> {
         .flatMap((GetSasObjectsStart action) {
       return Stream<void>.value(null) //
           .asyncMap((_) => _api.getObjects())
-          .map<GetSasObjects>(GetSasObjects.successful)
-          .onErrorReturnWith(GetSasObjects.error);
+          .expand((List<SasObject> sasObjects) {
+            final Set<int> userIds = <int>{};
+
+            for (final SasObject sasObject in sasObjects) {
+              userIds.add(sasObject.id);
+            }
+
+            return <AppAction>[
+              GetSasObjects.successful(sasObjects),
+              GetUsersByIds.start(ids: userIds.toList()),
+            ];
+          })
+          .onErrorReturnWith(GetSasObjects.error)
+          // keep this for formatting purpose only
+          .doOnData((_) {});
     });
   }
 }

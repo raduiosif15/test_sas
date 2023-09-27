@@ -7,3 +7,4 @@ import 'package:test_sas/src/models/index.dart';
 
 part 'index.freezed.dart';
 part 'sas_objects_container.dart';
+part 'user_container.dart';

@@ -1,8 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:test_sas/src/models/index.dart';
 
-part 'get_sas_objects.dart';
 part 'index.freezed.dart';
+part 'sas_objects/get_sas_objects.dart';
+part 'users/get_users_by_ids.dart';
 
 abstract class AppAction {}
 

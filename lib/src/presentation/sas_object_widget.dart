@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_sas/generated/l10n.dart';
+import 'package:test_sas/src/container/index.dart';
 import 'package:test_sas/src/models/index.dart';
 
 class SasObjectWidget extends StatelessWidget {
@@ -28,6 +30,31 @@ class SasObjectWidget extends StatelessWidget {
               Text(
                 sasObject.body,
                 style: Theme.of(context).textTheme.labelSmall,
+              ),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  UserContainer(
+                    id: sasObject.userId,
+                    builder: (BuildContext context, UserViewModel vm) {
+                      if (vm.isLoading) {
+                        return const Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      }
+
+                      if (vm.user == null) {
+                        return const SizedBox.shrink();
+                      }
+
+                      return Text(
+                        S.of(context).posted_by(vm.user!.name),
+                        style: Theme.of(context).textTheme.labelSmall,
+                      );
+                    },
+                  ),
+                ],
               ),
             ],
           ),

@@ -6,13 +6,19 @@ import 'package:test_sas/generated/config.dart';
 import 'package:test_sas/src/models/index.dart';
 
 @injectable
-class SasApi {
-  SasApi({required Client client}) : _client = client;
+class UsersApi {
+  UsersApi({required Client client}) : _client = client;
 
   final Client _client;
 
-  Future<List<SasObject>> getObjects() async {
-    final Uri url = Uri.https(Config.hostUrl, 'posts');
+  Future<List<SasUser>> getUsersByIds(List<int> ids) async {
+    final Uri url = Uri.https(
+      Config.hostUrl,
+      'users',
+      <String, String>{
+        'user_ids': ids.join(','),
+      },
+    );
 
     final Response response = await _client.get(url);
 
@@ -21,9 +27,8 @@ class SasApi {
     }
 
     final List<dynamic> body = jsonDecode(response.body) as List<dynamic>;
-
     return body //
-        .map((dynamic json) => SasObject.fromJson(json as Map<String, dynamic>))
+        .map((dynamic json) => SasUser.fromJson(json as Map<String, dynamic>))
         .toList();
   }
 }

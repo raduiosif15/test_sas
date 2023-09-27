@@ -5,3 +5,5 @@ part 'index.freezed.dart';
 part 'index.g.dart';
 part 'sas_object/sas_object.dart';
 part 'sas_object/sas_state.dart';
+part 'users/user.dart';
+part 'users/users_state.dart';

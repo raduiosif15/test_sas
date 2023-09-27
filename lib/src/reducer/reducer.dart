@@ -5,6 +5,7 @@ import 'package:test_sas/src/models/index.dart';
 
 part 'app_reducer.dart';
 part 'sas_reducer.dart';
+part 'users_reducer.dart';
 
 const ActionReporting _reporting = ActionReporting();
 
@@ -14,5 +15,6 @@ AppState reducer(AppState state, dynamic action) {
   final AppState newState = appReducer(state, action);
   return newState.copyWith(
     sasState: sasReducer(state.sasState, action),
+    usersState: usersReducer(state.usersState, action),
   );
 }

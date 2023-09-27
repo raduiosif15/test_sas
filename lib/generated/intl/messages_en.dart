@@ -20,9 +20,13 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(user) => "Posted by: ${user}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "app_title": MessageLookupByLibrary.simpleMessage("Test Sas App"),
-        "empty_list": MessageLookupByLibrary.simpleMessage("Sas objects list is empty")
+        "empty_list":
+            MessageLookupByLibrary.simpleMessage("Sas objects list is empty"),
+        "posted_by": m0
       };
 }
